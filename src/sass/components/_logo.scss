@@ -1,0 +1,21 @@
+.logo {
+    display: inline-block;
+    width: 71px;
+    height: 52px;
+
+    @media screen and (min-width: 768px) {
+        @include transition-animation(transform);
+        
+        &:focus {
+            transform: scale(1.1);
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.logo__icon {
+    display: block;
+}

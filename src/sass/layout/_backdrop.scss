@@ -1,0 +1,19 @@
+/*Бекдроп*/
+.backdrop {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--box-shadow-3);
+    opacity: 1;
+    overflow-y: scroll;
+    @include transition-animation(opacity visibility);
+
+    &::-webkit-scrollbar {
+        @media screen and (min-width: 320px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/*Фон сторінки та головний шрифт*/
+.body-general {
+    font-family: var(--general-ff);
+    font-weight: var(--general-fw);
+    font-size: var(--general-fs);
+    line-height: var(--general-lh);
+    background-color: var(--content-color);
+    color: #2C2C2C;
+
+    &::-webkit-scrollbar {
+        @media screen and (min-width: 320px) {
+            display: none;
+        }
+    }
+}
+
+/*Головний блок для контенту*/
+.main-content {
+    background-color: transparent;
+}

@@ -1,0 +1,80 @@
+<header class="header">
+    <div class="container">
+        <div class="header__wrraper">
+
+            <!--Логотип хедера-->
+            <a class="logo" id="home" href="./">
+                <svg class="logo__icon" width="71px" height="52px">
+                    <use href="/src/images/icons.svg#logo"></use>
+                </svg>
+            </a>
+
+            <!--Кнопка випадаючого меню data-mobile-open-->
+            <button class="button-menu" type="button" data-menu-button>
+                <svg class="button-menu__image" width="28px" height="28px" 
+                        aria-label="Перемикач мобільного меню" 
+                        aria-expanded="false" 
+                        aria-controls="mobile-menu" 
+                        role="button">
+                    <use class="button-menu__icon" href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+            
+            <!--Випадаюче мобільне меню data-mobile-menu-->
+            <div class="mobile-menu" id="mobile-menu" data-menu>
+            
+                <!--Блок навігації-->
+                <nav class="mobile-navigation">
+            
+                    <!--Навігація-->
+                    <ul class="mobile-navigation__list">
+                        <li class="mobile-navigation__item">
+                            <a class="mobile-navigation__link" href="#home">Home</a>
+                        </li>
+                        <li class="mobile-navigation__item">
+                            <a class="mobile-navigation__link" href="#about">About</a>
+                        </li>
+                        <li class="mobile-navigation__item">
+                            <a class="mobile-navigation__link" href="#service">Service</a>
+                        </li>
+                        <li class="mobile-navigation__item">
+                            <a class="mobile-navigation__link" href="#menu">Menu</a>
+                        </li>
+                        <li class="mobile-navigation__item">
+                            <a class="mobile-navigation__link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+            
+                </nav>
+
+            </div>
+
+            <!--Блок навігації-->
+            <nav class="header__navigation">
+            
+                <!--Навігація-->
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="#home">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#about">About</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#service">Service</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#menu">Menu</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            
+            </nav>
+
+            <button class="button-modal" type="button" data-modal-open>Order Now</button>
+
+        </div>
+    </div>
+</header>

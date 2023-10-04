@@ -1,0 +1,81 @@
+<!--Бекдроп-->
+<div class="backdrop is-hidden" data-modal>
+
+    <!--Модальне вікно-->
+    <div class="modal-box">
+
+        <!--Кнопка закриття модального вікна-->
+        <button class="button-close" title="Close" data-modal-close>
+            <svg class="button-close__image" width="11px" height="11px">
+                <use href="/src/images/icons.svg#close"></use>
+            </svg>
+        </button>
+
+        <h2 class="title-modal">Leave your details, we will call you back</h2>
+
+        <!--Форма модального вікна-->
+        <form class="modal-form" id="modal-form" action="#" method="post" autocomplete="off">
+
+            <label class="modal-form__label" for="modal-name">Your name</label>
+            <div class="modal-form__input-box">
+                <input class="modal-form__input-name" type="text" id="modal-name" name="user-name" required>
+                <svg class="modal-form__input-image" width="12px" height="12px">
+                    <use href="/src/images/icons.svg#person"></use>
+                </svg>
+            </div>
+
+            <label class="modal-form__label" for="modal-phone">Telephone</label>
+            <div class="modal-form__input-box">
+                <input class="modal-form__input-phone" type="tel" id="modal-phone" name="user-phone" required>
+                <svg class="modal-form__input-image" width="14px" height="14px">
+                    <use href="/src/images/icons.svg#phone"></use>
+                </svg>
+            </div>
+
+            <label class="modal-form__label" for="modal-email">E-mail</label>
+            <div class="modal-form__input-box">
+                <input class="modal-form__input-email" type="email" id="modal-email" name="user-email" required
+                    autocomplete="on" placeholder="example@email.com">
+                <svg class="modal-form__input-image" width="16px" height="12px">
+                    <use href="/src/images/icons.svg#email"></use>
+                </svg>
+
+                <span class="modal-form__input-invalid">
+                    <svg class="modal-form__input-invalid-icon" width="12px" height="12px">
+                        <use href="/src/images/icons.svg#frame"></use>
+                    </svg>
+                    Not a valid email address (example@email.com)
+                </span>
+                
+            </div>
+
+            <label class="modal-form__label" for="modal-comment">Comments</label>
+            <textarea class="modal-form__input-comment modal-form__input-comment--textarea" id="modal-comment"
+                name="user-comment" placeholder="Enter text"></textarea>
+
+            <label class="modal-form__label-box" for="modal-conditions">
+
+                <input class="modal-form__input-conditions" type="checkbox" id="modal-conditions" value="conditions"
+                    name="user-conditions">
+
+                <span class="modal-form__box-conditions"></span>
+
+                <svg class="modal-form__image-conditions" width="13px" height="10px">
+                    <use href="/src/images/icons.svg#check"></use>
+                </svg>
+
+                <span class="modal-form__label-conditions">By subscribing you agree to with our
+
+                    <a class="modal-form__link-conditions" href="#">Privacy Policy</a>
+
+                </span>
+
+            </label>
+
+            <button class="modal-form__button" type="submit" name="form-modal-button">Order Now</button>
+
+        </form>
+
+    </div>
+
+</div>

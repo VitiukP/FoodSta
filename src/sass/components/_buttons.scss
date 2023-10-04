@@ -1,0 +1,92 @@
+.button-menu {
+    display: inline-flex;
+    border: 0;
+    padding: 0;
+    margin-left: auto;
+    background: var(--content-color);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.is-open {
+        position: fixed;
+        z-index: 5;
+        top: 22px;
+        right: 20px;
+
+        @media screen and (min-width: 480px) {
+            right: calc(20px + (100vw - 480px) / 2);
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.button-menu__image {
+    display: block;
+}
+
+.button-menu__icon {
+    display: block;
+}
+
+.button-modal {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        background: var(--general-color);
+        border: 0;
+        border-radius: 30px;
+        padding: 6px 18px 5px;
+        line-height: var(--main-lh);
+        @include transition-animation(background);
+
+        &:focus,
+        &:hover, 
+        &:active {
+            background: var(--focus-color);
+        }
+    }
+}
+
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: var(--content-color);
+    border: 1px solid var(--box-shadow-4);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    @include transition-animation(border);
+
+    &:focus, 
+    &:hover {
+        border-color: var(--hover-color);
+    }
+}
+
+.button-close__image {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    fill: currentColor;
+    @include transition-animation(fill);
+}
+
+.button-close:focus .button-close__image,
+.button-close:hover .button-close__image {
+    fill: var(--hover-color);
+}

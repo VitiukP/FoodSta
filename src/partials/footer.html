@@ -1,0 +1,97 @@
+<footer class="footer">
+    <div class="container">
+        <!-- Перший блок по ТЗ -->
+        <div class="footer-content">
+
+            <div class="footer-content__thumb">
+
+                <!--Логотип футера-->
+                <a class="logo" href="./">
+                    <svg class="logo__icon" width="71px" height="52px">
+                        <use href="/src/images/icons.svg#logo"></use>
+                    </svg>
+                </a>
+                
+                <!-- Блок навігації -->
+                <nav class="footer__navigation">
+
+                    <!-- Навігація -->
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#home" >Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#about">About</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#service">Service</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#menu">Menu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            
+            </div>
+
+            <!-- Блок підписки -->
+            <div class="footer-newslatter">
+
+                <p class="footer-newslatter__title">Subscribe</p>
+
+                <!-- Форма -->
+                <form class="subscribe-form footer-form">
+                
+                    <label class="visually-hidden" for="newslatter">Enter your e-mail</label>
+
+                    <div class="subscribe-form__input-box">
+                
+                        <input class="subscribe-form__input footer-form-input" type="email" name="email" id="newslatter" placeholder="Enter your email" required>
+                    
+                        <span class="subscribe-form__input-invalid">
+                            <svg class="subscribe-form__input-icon" width="12px" height="12px">
+                                <use href="/src/images/icons.svg#frame"></use>
+                            </svg>
+                            Not a valid email address (example@email.com)
+                        </span>
+                        
+                    </div>
+
+                    <button class="subscribe-form__button footer-form-button" type="submit">Subscribe</button>
+                
+                </form>
+
+                <p class="footer__policy">By subscribing you agree to with our 
+                    <a href="#" class="footer__policy_link">Privacy Policy</a>
+                </p>
+
+            </div> 
+
+        </div>
+
+        <!-- Другий блок по ТЗ -->
+        <div class="footer-information">
+
+            <!-- Блок додаткової інформації -->
+            <ul class="footer-information__list">
+                <li class="footer-information__item">
+                    <a href="#" class="footer-information__link">Privacy Policy</a>
+                </li>
+                <li class="footer-information__item">
+                    <a href="#" class="footer-information__link">Terms of Service</a>
+                </li>
+                <li class="footer-information__item">
+                    <a href="#" class="footer-information__link">Cookies Settings</a>
+                </li>
+            </ul>
+
+            <!-- Копірайт -->
+            <p class="footer-information__copyright">2022 FoodSta. All right reserved.</p>
+
+        </div>
+        
+    </div>
+</footer>

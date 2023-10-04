@@ -1,0 +1,74 @@
+:root {
+    /*Кольори для фону секцій*/
+    --primary-section-fon: #FFFFFF;
+
+    /*Кольори для контенту*/
+    --content-color: #FEFEFE;
+
+    /*Кольори рамок*/
+    --input-color: #FFE550;
+    --invalid-color: #FF705D;
+    --border-radial: rgba(255, 255, 255, 0.5);
+    --modal-form__input: rgba(33, 33, 33, 0.2);
+
+    /*Кольори тексту*/
+    --mobile-text-color: #000000;
+    --text-color-primary: #2C2C2C;
+    --text-color-secondary: #505050;
+    --hover-text-color: rgba(105, 105, 105, 0.95);
+
+    /*Кольори блоків, ефектів ховера і фокусу*/
+    --general-color: #BBF330;
+    --focus-color: #B5FF00;
+    --hover-color: #7EB101;
+    --active-color: #597D00;
+
+    /*Кольори тіней та затемнень*/
+    --button-shadow-color: rgba(0, 0, 0, 0.25);
+    --section-shadow: rgba(105, 105, 105, 0.1);
+    --box-shadow-1: rgba(0, 0, 0, 0.12);
+    --box-shadow-2: rgba(0, 0, 0, 0.14);
+    --box-shadow-3: rgba(0, 0, 0, 0.2);
+    --box-shadow-4: rgba(0, 0, 0, 0.1);
+    --box-shadow-5: rgba(0, 0, 0, 0.06);
+    --box-shadow-6: rgba(0, 0, 0, 0.16);
+    --box-shadow-7: #2F583F;
+    --box-shadow-8: rgba(105, 105, 105, 0);
+
+    /*Сімейство шрифтів*/
+    --general-ff: #{'Roboto', sans-serif};
+    
+    /*Вага шрифту*/
+    --general-fw: 400;
+    --unit-fw: 500;
+    --header-fw: 700;
+
+    /*Розмір шрифту*/
+    --information-fs: 10px;
+    --modal-label-fs: 12px;
+    --general-fs: 14px;
+    --text-fs: 16px;
+    --title-desktop-fs: 17px;
+    --title-fs: 18px;
+    --modal-title-fs: 20px;
+    --header-fs: 28px;
+    --header-tablet-fs: 42px;
+    --header-desktop-fs: 48px;
+
+    /*Висота лінії шрифту*/
+    --general-lh: 1.14;
+    --modal-title-lh: 1.15;
+    --modal-label-lh: 1.17;
+    --header-lh: 1.18;
+    --text-lh: 1.19;
+    --information-lh: 1.2;
+    --title-modal-lh: 1.5;
+    --title-lh: 1.71;
+    --header-desktop-lh: 120%;
+    --title-lh: 140%;
+    --main-lh: 150%;
+
+    /*Міжсимвольний інтервал*/
+    --modal-label-ls: 0.01em;
+    --title-ls: 0.03em;
+}
